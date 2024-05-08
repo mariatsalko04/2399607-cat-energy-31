@@ -14,10 +14,16 @@
 
     <div class="container">
       <nav class="navigation">
+
         <a class="navigation__logo logo" href="#">
+          /--логотип и тест в виде изображения--/
           <img class="logo__image" src="#" width="100" height="100" alt="Логотип Кэт Энерджи">
           <p class="logo__link">Cat Enepgy</p>
         </a>
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item  navigation__item--active">
@@ -42,6 +48,7 @@
   <main class="main-container">
 
     <section class="hero">
+
       <h1 class="visually-hidden">Питание для котов</h1>
 
       <div class="hero__container">
@@ -51,6 +58,7 @@
         <button class="hero__button button button--primary" type="button">подобрать программу
         </button>
       </div>
+
     </section>
 
     <section class="advantages">
@@ -77,16 +85,16 @@
 
       <div class="instruction__container">
         <ul class="instruction__list">
-          <li class="instruction__item instruction__item--sheet">
+          <li class="instruction__item instruction__item--icon-sheet">
             <p class="instruction__description">Функциональное питание содержит тольео полезные питательные вещества.</p>
           </li>
-          <li class="instruction__item instruction__item--powder">
+          <li class="instruction__item instruction__item--icon-powder">
             <p class="instruction__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
-          <li class="instruction__item instruction__item--food">
+          <li class="instruction__item instruction__item--icon-food">
             <p class="instruction__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
-          <li class="instruction__item instruction__item--clock">
+          <li class="instruction__item instruction__item--icon-clock">
             <p class="instruction__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -101,72 +109,86 @@
       <div class="example__container example-stats">
         <ul class="example-stats__list">
           <li class="example-stats__item">
-            <p class="example-stats__description">5 кг</p>
-            <p class="example-stats__caption">Снижение веса</p>
+            <span class="example-stats__description">5 кг</span>
+            <span class="example-stats__caption">Снижение веса</span>
           </li>
           <li class="example-stats__item">
-            <p class="example-stats__description">60 дней</p>
-            <p class="example-stats__caption">Затрачено времени</p>
+            <span class="example-stats__description">60 дней</span>
+            <span class="example-stats__caption">Затрачено времени</span>
           </li>
           <li class="example-stats__item">
-            <p class="example-stats__description">Затраты на питание</p>
-            <p class="example-stats__caption">15 000 руб</p>
+            <span class="example-stats__description">Затраты на питание</span>
+            <span class="example-stats__caption">15 000 руб</span>
           </li>
         </ul>
       </div>
 
       <div class="image-slider">
         <div class="image-slider__before">
+
+          /--pictire--/
           <img src="#" width="100" height="100" alt="Изображение кота до похудения">
         </div>
+
         <div class="image-slider__after">
           <img src="#" width="100" height="100" alt="Изображение кота после похудения">
+
         </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="contacts__container">
-        <h4 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h4>
-        <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__container grey">
+        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+        <adress class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</adress>
       </div>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
+
+      /--pictire--/
       <img class="map__image" src="#" width="100" height="100" alt="Адрес на карте">
+
     </section>
   </main>
 
   <footer class="main-footer">
 
-    <div class="main-footer__container logo">
+    <div class="main-footer__logo">
       <a class="main-footer__logo main-footer__logo--type-link" href="#">
         <img src="#" width="100" height="100" alt="Cat Energy">
       </a>
     </div>
 
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="https://m.vk.com/htmlacademy">
-          <span class="visually-hidden">Мы вконтакте</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
-          <span class="visually-hidden">Мы в ютубе</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademys">
-          <span class="visually-hidden">Мы в телеграме</span>
-        </a>
-      </li>
-    </ul>
-    <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__logo" src="#" width="100" height="100" alt="Логотип HTML Academy">
-    </a>
+    <div class="main-footer__social social">
+
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://m.vk.com/htmlacademy">
+            <span class="visually-hidden">Мы вконтакте</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g">
+            <span class="visually-hidden">Мы в ютубе</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademys">
+            <span class="visually-hidden">Мы в телеграме</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="copyright__text">HTML Academy</span>
+        <img class="copyright__logo" src="#" width="100" height="100" alt="Логотип HTML Academy">
+      </a>
+    </div>
   </footer>
 </body>
 
