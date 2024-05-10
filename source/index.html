@@ -16,10 +16,18 @@
       <nav class="navigation">
 
         <a class="navigation__logo logo" href="#">
-          /--логотип и тест в виде изображения--/
-          <img class="logo__image" src="#" width="100" height="100" alt="Логотип Кэт Энерджи">
-          <p class="logo__link">Cat Enepgy</p>
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="./images/logo/logo-pic-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="./images/logo/logo-pic-tablet.svg">
+            <img class="logo__image" src="./images/logo/logo-pic-mobile.svg" width="33" height="38" alt="Логотип Кэт Энерджи">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="./images/logo/logo-text-desktop.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="./images/logo/logo-text-desktop.svg">
+            <img class="logo__image" src="./images/logo/logo-text.svg" width="101" height="18" alt="Логотип Кэт Энерджи">
+          </picture>
         </a>
+
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
@@ -37,7 +45,7 @@
             </li>
           </ul>
           <button class="navigation__toggle menu-button" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
         </div>
       </nav>
@@ -54,7 +62,13 @@
       <div class="hero__container">
         <h2 class="hero__title">Функциональное питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="#" width="100" height="100" alt="Коробка с кормом Cat Energy со вкусом курицы">
+
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="./images/hero/hero-desctop@1x.png 1x, ./images/hero/hero-desctop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="./images/hero/hero-tablet@1x.png 1x, ./images/hero/hero-tablet@2x.png 2x">
+          <img class="hero__image" src="./images/hero/hero-mobile@1x.png 1x" srcset="./images/hero/hero-mobile@2x.png" width="280" height="270" alt="Коробка с кормом Cat Energy со вкусом курицы">
+        </picture>
+
         <button class="hero__button button button--primary" type="button">подобрать программу
         </button>
       </div>
@@ -123,15 +137,20 @@
         </ul>
       </div>
 
-      <div class="image-slider">
-        <div class="image-slider__before">
+      <div class="slider">
 
-          /--pictire--/
-          <img src="#" width="100" height="100" alt="Изображение кота до похудения">
+        <div class="slider__before">
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/slider/slider-cat-before-tablet@1x@2x.png 1x, ./images/slider/slider-cat-before-tablet@2x@2x.png 2x">
+            <img class="slider__image" src="./images/slider/slider-cat-before-mobile@1x@1x.png 1x" srcset="./images/slider/slider-cat-before-mobile@2x@1x.png" width="280" height="256" alt=" Изображение кота до похудения">
+          </picture>
         </div>
 
-        <div class="image-slider__after">
-          <img src="#" width="100" height="100" alt="Изображение кота после похудения">
+        <div class="slider__after">
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="./images/slider/slider-cat-after-tablet@1x (2)@2x.png 1x, ./images/slider/slider-cat-after-tablet@2x (1)@2x.png 2x">
+            <img class="slider__image" src="./images/slider/slider-cat-after-mobile@1x (1)@2x.png 1x" srcset="./images/slider/slider-cat-after-mobile@2x (2)@2x.png 2x" width="280" height="256" alt="Изображение кота после похудения">
+          </picture>
 
         </div>
       </div>
