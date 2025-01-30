@@ -1,0 +1,16 @@
+.adress__title {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.adress__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: $primary-color-text;
+}

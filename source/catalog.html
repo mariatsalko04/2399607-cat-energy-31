@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.scss">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicons/favicon.ico">
     <link rel="icon" href="favicons/icon.svg" type="images/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
@@ -29,15 +29,15 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item f">
-              <a href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Подбор программы</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -327,11 +327,11 @@
 
             <li class="products__item">
 
-              <b class="products__title">
-                <a class="products__name" href="#">Показать еще 100500 товаров</a>
+              <b>
+                <a class="products__name-all" href="#">Показать еще 100500 товаров</a>
               </b>
 
-              <p class="products__desctiption">На самом деле вкусов гораздо больше!</p>
+              <p class="products__desctiption-all">На самом деле вкусов гораздо больше!</p>
               
               <button class="products__button products__button--secondary" type="button">Показать все</button>
 
@@ -347,7 +347,7 @@
           <table class="sub-products__list">
             
             <tr class="sub-products__item">
-              <td class="sub-products__title">Сахарозаменитель</td>
+              <td class="sub-products__name">Сахарозаменитель</td>
               <td class="sub-products__value">1 упаковка (100 г)</td>
               <td class="sub-products__cost">200 ₽</td>
               <td>
@@ -356,7 +356,7 @@
             </tr>
 
             <tr class="sub-products__item">
-              <td class="sub-products__title">Питьевая вода</td>
+              <td class="sub-products__name">Питьевая вода</td>
               <td class="sub-products__value">5 литров</td>
               <td class="sub-products__cost">50 ₽</td>
               <td>
@@ -365,7 +365,7 @@
             </tr>
 
             <tr class="sub-products__item">
-              <td class="sub-products__title">Молоко</td>
+              <td class="sub-products__name">Молоко</td>
               <td class="sub-products__value">1 литр</td>
               <td class="sub-products__cost">100 ₽</td>
               <td>
@@ -374,7 +374,7 @@
             </tr>
 
             <tr class="sub-products__item">
-              <td class="sub-products__title">Витамины</td>
+              <td class="sub-products__name">Витамины</td>
               <td class="sub-products__value">1 упаковка (30 г)</td>
               <td class="sub-products__cost">300 ₽</td>
               <td>
@@ -395,7 +395,7 @@
       <section class="subscription">
         <div class="subscription__wrapper">
           <h3 class="subscription__title">Акции и новинки</h3>
-          <p class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+          <b class="subscription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</b>
           <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscription-email">Укажите ваш e-mail</label>
             <input class="subscription__email" type="email" name="mail" placeholder="kuklachev@gmail.com" id="subscription-email" required>

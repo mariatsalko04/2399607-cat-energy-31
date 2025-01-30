@@ -1,0 +1,19 @@
+.promo__wrapper {
+  font-family: $primary-font;
+  background: linear-gradient(to right, white 50%, $bg-green 50%);
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $secondary-color-text;
+  text-align: center;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: $secondary-color-text;
+  text-align: center;
+  text-transform: uppercase;
+}
