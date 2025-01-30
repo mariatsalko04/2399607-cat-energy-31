@@ -1,0 +1,45 @@
+.stats__wrapper {
+  background-color: #eaeaea;
+  font-family: $primary-font;
+}
+
+.stats__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.stats__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  color: $primary-color-text;
+}
+
+.stats__number {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats__description-result {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $primary-color-text;
+}
+
+.stats__results-title {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.stats__results-indicator {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
