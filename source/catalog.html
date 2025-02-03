@@ -325,7 +325,7 @@
 
             </li>
 
-            <li class="products__item">
+            <li class="products__item products__item--show-all">
 
               <b>
                 <a class="products__name-all" href="#">Показать еще 100500 товаров</a>
@@ -384,7 +384,6 @@
           </table>
 
           <div class="sub-products__gift">
-            <!--img cat-->
             <p class="sub-products__label">Закажите все<br>
               и получите чехол для<br>
               кота в подарок!</p>
@@ -446,16 +445,25 @@
           <ul class="social">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg role="img" width="28" height="22">
+                  <use href="icons/stack.svg#footer_icon-vk"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg role="img" width="28" height="22">
+                  <use href="icons/stack.svg#footer_icon-youtube"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Ютубе</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg role="img" width="28" height="22">
+                  <use href="icons/stack.svg#footer_icon-telegram"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Телеграмме</span>
               </a>
             </li>
@@ -463,8 +471,12 @@
         </div>
 
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">HTML Academy</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+            HTML Academy
+            <svg role="img" width="27" height="34">
+              <use href="icons/stack.svg#footer_logo-htmlacademy"></use>
+            </svg> 
+          </a>
         </div>
        </div>
     </footer>

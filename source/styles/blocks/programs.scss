@@ -6,6 +6,20 @@
   background-color: $bg-grey;
 }
 
+.programs__item--loss {
+  background-image: url("/icons/stack.svg#index-icons_cat-slim-mobile");
+  background-size: 50px 53px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.programs__item--fast {
+  background-image: url("/icons/stack.svg#index-icons_cat-pro-mobile");
+  background-size: 67px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .programs__title {
   font-size: 24px;
   line-height: 37px;
@@ -28,4 +42,16 @@
   text-align: center;
   text-transform: uppercase;
   color: $base-color-text;
+}
+
+.programs__link::after {
+  content: "";
+  display: block;
+  height:12px;
+  width: 24px;
+  background-color: #000000;
+  mask-image: url("/icons/stack.svg#index-icons_icon-arrow");
+  mask-position: center;
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
