@@ -1,3 +1,4 @@
+
 .advantages__title {
   font-family: $primary-font;
   font-size: 36px;
@@ -11,4 +12,37 @@
   line-height: 18px;
   text-align: left;
   color: $primary-color-text;
+}
+
+.advantages__item {
+  background-color: $bg-green;
+
+}
+
+.advantages__item--icon-leaf {
+  background-image: url("/icons/stack.svg#index-icons_icon-leaf");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-water {
+  background-image: url("/icons/stack.svg#index-icons_icon-water");
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-eat {
+  background-image: url("/icons/stack.svg#index-icons_icon-eat");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__item--icon-clock {
+  background-image: url("/icons/stack.svg#index-icons_icon-clock");
+  background-size: 27px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
