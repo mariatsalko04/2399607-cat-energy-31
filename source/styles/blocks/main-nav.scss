@@ -1,5 +1,36 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+
 .main-nav__list {
   font-family: $primary-font;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px 34px;
+}
+
+   @media (min-width: $desktop-width) {
+    z-index: 1;
+   }
 }
 
 .main-nav__link {
@@ -8,4 +39,9 @@
   color: $base-color-text;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    color: $secondary-color-text;
+   }
 }
+

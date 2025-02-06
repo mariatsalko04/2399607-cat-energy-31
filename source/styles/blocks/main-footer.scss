@@ -1,3 +1,23 @@
-.main-footer__wrapper {
+.main-footer {
+  font-family: $primary-font;
   background-color: $bg-grey;
 }
+
+.main-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  align-items: center; 
+  row-gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 55px 30px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
+}
+

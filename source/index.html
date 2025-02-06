@@ -13,7 +13,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo logo" href="index.html">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-desktop" width="70" height="59">
           <source media="(min-width: 768px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-tablet" width="60" height="50">
@@ -25,10 +26,11 @@
         </picture>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        
+        
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -40,8 +42,8 @@
               <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
       </nav>
+    </div> 
     </header>
     <main class="main-container">
 
@@ -50,16 +52,19 @@
 
         <div class="promo__wrapper">
           <h2 class="promo__title">Функциональное питание для котов</h2>
-          <picture>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <div class="promo__picture"> 
+            <picture>
             <source media="(min-width: 1440px)" type="image/png" srcset="images/desktop-index/index-cat-desktop@1x.webp, images/desktop-index/index-cat-desktop@2x.webp" width="552" height="499">
-            <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/index-cat-tablet @1x.webp, images/tablet-index/index-cat-tablet @2x.webp" width="709" height="609">
+            <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/index-cat-tablet@1x.webp, images/tablet-index/index-cat-tablet@2x.webp" width="709" height="609">
             <source type="image/webp" srcset="images/mobile-index/index-cat-mobile@1x.webp, images/mobile-index/index-cat-mobile@2x.webp" width="280" height="270">
             <source media="(min-width: 1440px)" type="image/png" srcset="images/desktop-index/index-cat-desktop@1x.png 1x, images/desktop-index/index-cat-desktop@2x.png 2x" width="552" height="499">
-            <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/index-cat-tablet @1x.png 1x, images/tablet-index/index-cat-tablet @2x.png 2x" width="709" height="609">
-            <img class="promo__picture" type="image/png" src="images/mobile-index/index-cat-mobile@1x.png 1x" srcset="images/mobile-index/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy PRO со вкусом курицы">
+            <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/index-cat-tablet@1x.png 1x, images/tablet-index/index-cat-tablet@2x.png 2x" width="709" height="609">
+            <img class="promo__image" type="image/png" src="images/mobile-index/index-cat-mobile@1x.png 1x" srcset="images/mobile-index/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy PRO со вкусом курицы">
           </picture>
+          </div>
+         
           
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <a class="promo__button button" href="form.html" >Подобрать программу</a>
         </div>
 
@@ -115,101 +120,83 @@
         <div class="stats__wrapper">
           <h2 class="stats__title">Живой пример</h2>
           <p class="stats__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="stats__list">
-            <div class="stats__item">
-              <dt class="stats__number">5 кг</dt>
-              <dd class="stats__description-result">снижение веса</dd>
+          <div class="stats__container">
+            <ul class="stats__list">
+              <li class="stats__item">
+                <span class="stats__number">5 кг</span>
+                <span class="stats__description-result">снижение веса</span>
+              </li>
+              <li class="stats__item">
+                <span class="stats__number">60 дней</span>
+                <span class="stats__description-result">затрачено времени</span>
+              </li>
+            </ul>
+            <div class="stats__results">
+              <span class="stats__indificator">Затраты на питание: </span>
+              <span class="stats__cost"> 15 000 РУБ.</span>
             </div>
-            <div class="stats-item">
-              <dt class="stats__number">60 дней</dt>
-              <dd class="stats__description-result">затрачено времени</dd>
-            </div>
-          </dl>
-
-          <div class="stats__results">
-            <span class="stats__results-title">Затраты на питание:</span>
-            <span class="stats__results-indicator">15 000 РУБ.</span>
           </div>
-
         </div>
-      </section>
-
-      <section class="slider">
-        <h2 class="visually-hidden">Изображения двух котов: до и после</h2>
-        <div class="slider-wrapper">
+          <div class="stats__slider slider">
 
           <!-- картина слева -->
-
-          <div class="slider__picture slider__picture--before">
-              <picture>
-                <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-before-tablet@1x.webp, images/tablet-index/cat-before-tablet@2x.webp" width="560" height="512">
-                <source type="image/webp" srcset="images/mobile-index/cat-before-mobile@1x.webp, mages/mobile-index/cat-before-mobile@2x.webp" width="280" height="256">          
-                <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-before-tablet@1x.png 1x, images/tablet-index/cat-before-tablet@2x.png 2x" width="560" height="512">
-                <img class="slider__image" type="image/png" src="images/mobile-index/cat-before-mobile@1x.png 1x" srcset="images/mobile-index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
-              </picture>
-          </div>
-
-          <!-- картинка справа -->
-
-          <div class="slider__picture slider__picture--after">
+           <div class="slider__picture slider__picture--before">
             <picture>
-              <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-after-tablet@1x.webp, images/tablet-index/cat-after-tablet@2x.webp" width="560" height="512">
-              <source type="image/webp" srcset="images/mobile-index/cat-after-mobile@1x.webp, images/mobile-index/cat-after-mobile@2x.webp" width="280" height="256">          
-              <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-after-tablet@1x.png 1x, images/tablet-index/cat-after-tablet@2x.png 2x" width="560" height="512">
-              <img class="slider__image" type="image/png" src="images/mobile-index/cat-after-mobile@1x.png 1x" srcset="images/mobile-index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+              <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-before-tablet@1x.webp, images/tablet-index/cat-before-tablet@2x.webp" width="560" height="512">
+              <source type="image/webp" srcset="images/mobile-index/cat-before-mobile@1x.webp, mages/mobile-index/cat-before-mobile@2x.webp" width="280" height="256">          
+              <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-before-tablet@1x.png 1x, images/tablet-index/cat-before-tablet@2x.png 2x" width="560" height="512">
+              <img class="slider__image" type="image/png" src="images/mobile-index/cat-before-mobile@1x.png 1x" srcset="images/mobile-index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
             </picture>
           </div>
 
-          <!-- слайдер посередине -->
+        <!-- картинка справа -->
+         <div class="slider__picture slider__picture--after">
+          <picture>
+            <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-after-tablet@1x.webp, images/tablet-index/cat-after-tablet@2x.webp" width="560" height="512">
+            <source type="image/webp" srcset="images/mobile-index/cat-after-mobile@1x.webp, images/mobile-index/cat-after-mobile@2x.webp" width="280" height="256">          
+            <source media="(min-width: 768px)" type="image/png" srcset="images/tablet-index/cat-after-tablet@1x.png 1x, images/tablet-index/cat-after-tablet@2x.png 2x" width="560" height="512">
+            <img class="slider__image" type="image/png" src="images/mobile-index/cat-after-mobile@1x.png 1x" srcset="images/mobile-index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
+          </picture>
+        </div>
 
-          <div class="dragme">
-            <div class="dragme-circle">
+        <!-- слайдер посередине -->
+         <div class="dragme">
+          <div class="dragme-circle">
 
-            </div>
           </div>
         </div>
+        </div>
       </section>
+
+      <section class="location">
+        <div class="location__wrapper">
+
+          <div class="location__address address">
+            <b class="address__title">Приглашаем<br>   к сотрудничеству<br> дилеров!</b>
+            <p class="address__text">ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+              Санкт-Петербург
+            </p>
+          </div>
+
+          <div class="location__map">
+            <h2 class="visually-hidden">Наш адрес</h2>
+          </div>
+
+        </div>
+      </section>
+
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-
-        <section class="location">
-          <div class="location__wrapper">
-  
-            <div class="location__adress adress">
-              <b class="adress__title">Приглашаем<br>   к сотрудничеству<br> дилеров!</b>
-              <p class="adress__text">ул. Большая<br>
-                Конюшенная, д. 19/8<br>
-                Санкт-Петербург
-              </p>
-            </div>
-  
-            <div class="location__map map">
-              <h2 class="visually-hidden">Наш адрес</h2>
-              <figure class="map__image">
-                <picture>
-  
-                  <!-- media -->
-  
-                </picture>
-              </figure>
-              <a class="map__link-pin" href="#">
-  
-                <!-- media -->
-  
-              </a>
-            </div>
-  
-          </div>
-        </section>
 
          <a class="main-footer__logo logo" href="index.html">
             <img class="logo__text logo__text--footer" src="icons/stack.svg#header_logo-text" width="128" height="24" alt="Cat Energy">
         </a> 
 
-        <div class="main-footer__social">
+        <div class="main-footer__social social">
 
-          <ul class="social">
+          <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg role="img" width="28" height="22">
@@ -240,10 +227,12 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             HTML Academy
+          </a>
+          <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive">
             <svg role="img" width="27" height="34">
               <use href="icons/stack.svg#footer_logo-htmlacademy"></use>
             </svg>
-          </a>
+          </a>    
         </div>
        </div>
     </footer>

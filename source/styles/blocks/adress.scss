@@ -1,16 +1,31 @@
-.adress__title {
+.address__title {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
-.adress__text {
+.address__text {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   text-align: left;
   color: $primary-color-text;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
