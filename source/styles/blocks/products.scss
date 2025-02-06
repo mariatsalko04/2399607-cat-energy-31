@@ -1,37 +1,116 @@
-.products__title {
+.products {
   font-family: $primary-font;
+  background-color: $bg-base-white;
+}
+
+.products__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+}
+
+.products__title {
   font-size: 36px;
   line-height: 36px;
   text-align: left;
+  align-self: flex-start;
+  margin: 0;
+  padding: 0 20px 41px 20px;
+
 }
 
-.products__item--show-all {
-  background-image: url("/icons/stack.svg#catalog-icons_plus");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 30px 30px;
+.products__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.products__name {
+.products__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-top: 1px solid #EBEBEB;
+  padding: 20px 20px 0 20px;
+}
+
+.products__item:last-child {
+  border-bottom: 1px solid #EBEBEB;
+}
+
+// product card //
+
+.product-card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 17px;
+}
+
+
+.product-card__link {
+  align-self: center;
+  justify-self: center;
+}
+
+
+.product-card__characteristic {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__name{
   font-size: 16px;
   line-height: 20px;
   text-align: left;
   color: $special-dark-grey;
   text-transform: uppercase;
+  padding-right: 64px;
+  margin-bottom: 14px;
 }
 
-.products__name-all {
+.product-card__button {
+  padding: 10px 110px;
+  max-width: 280px;
+}
+
+
+// product last-card //
+
+.product-card__all {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 21px;
+}
+
+.product-card--show-all {
+  background-image: url("/icons/stack.svg#catalog-icons_plus");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 30px 30px;
+  position: relative;
+}
+
+.product-card__name-all {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: #111111;
   text-transform: uppercase;
+  padding-top: 53px;
 }
 
-.products__desctiption-all {
+.product-card__desctiption-all {
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: $primary-color-text;
+  margin: 0;
+  padding-top: 8px;
 }
+
+.product-card__button-all {
+  padding: 10px 93px;
+  max-width: 280px;
+  margin-bottom: 24px;
+}
+

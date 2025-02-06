@@ -15,7 +15,8 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo logo" href="index.html">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-desktop" width="70" height="59">
         <source media="(min-width: 768px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-tablet" width="60" height="50">
@@ -27,10 +28,11 @@
       </picture>
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      
+      
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -42,8 +44,8 @@
             <a class="main-nav__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div> 
   </header>
   <main class="inner-container">
     <h1 class="inner-container__title">Подбор программы</h1>
@@ -168,49 +170,35 @@
         </fieldset>
       </form>
     </section>
+    <section class="location">
+      <div class="location__wrapper">
+
+        <div class="location__address address">
+          <b class="address__title">Приглашаем<br>   к сотрудничеству<br> дилеров!</b>
+          <p class="address__text">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+          </p>
+        </div>
+
+        <div class="location__map">
+          <h2 class="visually-hidden">Наш адрес</h2>
+        </div>
+
+      </div>
+    </section>
 
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
 
-      <section class="location">
-        <div class="location__wrapper">
+       <a class="main-footer__logo logo" href="index.html">
+          <img class="logo__text logo__text--footer" src="icons/stack.svg#header_logo-text" width="128" height="24" alt="Cat Energy">
+      </a> 
 
-          <div class="location__adress adress">
-            <b class="adress__title">Приглашаем к сотрудничеству дилеров!</b>
-            <p class="adress__text">ул. Большая<br>
-              Конюшенная, д. 19/8<br>
-              Санкт-Петербург
-            </p>
-          </div>
+      <div class="main-footer__social social">
 
-          <div class="location__map map">
-            <h2 class="visually-hidden">Наш адрес</h2>
-            <figure class="map__image">
-              <picture>
-
-                <!-- media -->
-
-              </picture>
-            </figure>
-            <a class="map__link-pin" href="#">
-
-              <!-- media -->
-
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <a class="main-footer__logo logo" href="index.html">
-        <img class="logo__text logo__text--footer" src="icons/stack.svg#header_logo-text" width="128" height="24"
-          alt="Cat Energy">
-      </a>
-
-      <div class="main-footer__social">
-
-        <ul class="social">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <svg role="img" width="28" height="22">
@@ -241,12 +229,14 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           HTML Academy
+        </a>
+        <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive">
           <svg role="img" width="27" height="34">
             <use href="icons/stack.svg#footer_logo-htmlacademy"></use>
-          </svg>      
-        </a>
+          </svg>
+        </a>    
       </div>
-    </div>
+     </div>
   </footer>
 </body>
 </html>
