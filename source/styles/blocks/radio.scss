@@ -1,0 +1,11 @@
+.radio__list { 
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+@media (min-width: $desktop-width) {
+  .radio__item {
+    height: 40px;
+  }
+}

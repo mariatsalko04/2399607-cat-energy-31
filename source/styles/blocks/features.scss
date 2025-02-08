@@ -1,27 +1,55 @@
 .features {
   display: flex;
   flex-direction: row;
+
 }
 
 .features__row {
   display: flex;
   justify-content: space-between;
   gap: 63px;
+
+  @media (min-width: $tablet-width) {
+    gap: 150px;
+    border-bottom:  1px solid #CDCDCD;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 71px;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .features__row:last-child {
+    margin: 0;
+  }
+}
+
 
 .features__title {
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;     
   color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .features__value {
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
+  text-align: right;
   color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 

@@ -17,39 +17,44 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-desktop" width="70" height="59">
-        <source media="(min-width: 768px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-tablet" width="60" height="50">
-        <img class="logo__logo-icon" src="icons/stack.svg#header_logo-mobile" width="33" height="38" alt="Логотип Cat Energy">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" type="images/svg+xml" srcset="icons/stack.svg#header_logo-text" width="118" height="21">
-        <img class="logo__text logo__text--header" src="icons/stack.svg#header_logo-text" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <nav class="main-nav">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-desktop"
+            width="70" height="59">
+          <source media="(min-width: 768px)" type="image/svg+xml" srcset="icons/stack.svg#header_logo-tablet" width="60"
+            height="50">
+          <img class="logo__logo-icon" src="icons/stack.svg#header_logo-mobile" width="33" height="38"
+            alt="Логотип Cat Energy">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" type="images/svg+xml" srcset="icons/stack.svg#header_logo-text"
+            width="118" height="21">
+          <img class="logo__text logo__text--header" src="icons/stack.svg#header_logo-text" width="101" height="18"
+            alt="Cat Energy">
+        </picture>
+      </a>
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-      
-      
+
+
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
+            <a class="main-nav__link main-nav__link--inner" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--inner" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--inner" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-    </div> 
+    </div>
   </header>
-  <main class="inner-container">
-    <h1 class="inner-container__title">Подбор программы</h1>
-    <p class="inner-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
+  <main class="form-container">
+    <h1 class="form-container__title">Подбор программы</h1>
+    <p class="form-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
 
     <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
       <div class="filter__wrapper">
@@ -82,19 +87,19 @@
           <ul class="radio__list">
             <li class="radio__item">
               <label class="control">
-                <input class="control__input" type="radio" name="categories" value="program" checked>
+                <input class="control__input-radio" type="radio" name="categories" value="program" checked>
                 <span class="control__name">Похудение</span>
               </label>
             </li>
             <li class="radio__item">
               <label class="control">
-                <input class="control__input" type="radio" name="categories" value="program">
+                <input class="control__input-radio" type="radio" name="categories" value="program">
                 <span class="control__name">Набор массы</span>
               </label>
             </li>
             <li class="radio__item">
               <label class="control">
-                <input class="control__input" type="radio" name="categories" value="program">
+                <input class="control__input-radio" type="radio" name="categories" value="program">
                 <span class="control__name">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
@@ -106,75 +111,85 @@
     <section class="contacts">
       <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filter__wrapper">
-          <legend class="visually-hidden">Контакты</legend>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <label class="control">
-                <span class="control__name">E-mail:*</span>
-                <input class="control__email" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
-              </label>
-            </li>
-            <li class="contacts__item">
-              <label class="control">
-                <span class="control__name">Телефон:*</span>
-                <input class="control__input" type="tel" name="phone" placeholder="8 (960) 900-60-90"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="filter__wrapper">
+          <fieldset class="filter__email">
+            <legend class="visually-hidden">Email</legend>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <label class="control">
+                  <span class="control__name">E-mail:*</span>
+                  <input class="control__input" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__phone">
+            <legend class="visually-hidden">Phone</legend>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <label class="control">
+                  <span class="control__name">Телефон:*</span>
+                  <input class="control__input" type="tel" name="phone" placeholder="8 (960) 900-60-90"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </label>
+            </ul>
+          </fieldset>
+        </div>
       </form>
     </section>
 
     <section class="comments">
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
         <h2 class="comments__title">Комментарий</h2>
-          <label class="visually-hidden" for="comment">Комментарий</label>
-            <textarea name="story" id="comment" rows="5" cols="33">Расскажите обо всех повадках кота</textarea>
+        <label class="visually-hidden" for="comment">Комментарий</label>
+        <textarea class="comments__text" name="story" id="comment" rows="5"
+          cols="33">Расскажите обо всех повадках кота</textarea>
       </form>
     </section>
 
     <section class="add-info">
       <h2 class="add-info__title">Дополнительно</h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filter__wrapper">
+        <fieldset class="filter__info">
           <legend class="visually-hidden">Дополнительная информация</legend>
           <ul class="add-info__list">
             <li class="add-info__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="sweetener" checked>
+                <input class="control__input-checkbox" type="checkbox" name="sweetener" checked>
                 <span class="control__name">Сахарозаменитель</span>
               </label>
             </li>
             <li class="add-info__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="water">
+                <input class="control__input-checkbox" type="checkbox" name="water">
                 <span class="control__name">Питьевая вода</span>
               </label>
             </li>
             <li class="add-info__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="milk">
+                <input class="control__input-checkbox" type="checkbox" name="milk">
                 <span class="control__name">Молоко</span>
               </label>
             </li>
             <li class="add-info__item">
               <label class="control">
-                <input class="control__input" type="checkbox" name="vitamins">
+                <input class="control__input-checkbox" type="checkbox" name="vitamins">
                 <span class="control__name">Витамины</span>
               </label>
             </li>
           </ul>
-          <button class="add-info__button add-info__button--primary" type="button">Отправить заявку</button>
+          <button class="add-info__button button" type="button">Отправить заявку</button>
         </fieldset>
       </form>
     </section>
+  </main>
+  <footer class="main-footer">
+
     <section class="location">
       <div class="location__wrapper">
 
         <div class="location__address address">
-          <b class="address__title">Приглашаем<br>   к сотрудничеству<br> дилеров!</b>
+          <b class="address__title">Приглашаем<br> к сотрудничеству<br> дилеров!</b>
           <p class="address__text">ул. Большая<br>
             Конюшенная, д. 19/8<br>
             Санкт-Петербург
@@ -187,14 +202,12 @@
 
       </div>
     </section>
-
-  </main>
-  <footer class="main-footer">
     <div class="main-footer__wrapper">
 
-       <a class="main-footer__logo logo" href="index.html">
-          <img class="logo__text logo__text--footer" src="icons/stack.svg#header_logo-text" width="128" height="24" alt="Cat Energy">
-      </a> 
+      <a class="main-footer__logo logo" href="index.html">
+        <img class="logo__text logo__text--footer" src="icons/stack.svg#header_logo-text" width="128" height="24"
+          alt="Cat Energy">
+      </a>
 
       <div class="main-footer__social social">
 
@@ -230,13 +243,15 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           HTML Academy
         </a>
-        <a class="copyright__link-icon" href="https://htmlacademy.ru/intensive/adaptive">
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип htmlacademy</span>
           <svg role="img" width="27" height="34">
             <use href="icons/stack.svg#footer_logo-htmlacademy"></use>
           </svg>
-        </a>    
+        </a>
       </div>
-     </div>
+    </div>
   </footer>
 </body>
+
 </html>

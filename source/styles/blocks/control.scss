@@ -1,9 +1,50 @@
+.control {
+  font-family: $primary-font;
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  max-height: 45px;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    max-height: 52px;
+  }
+}
 
 .control__name {
-  font-family: $primary-font;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
   color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.control__input {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  color: $primary-color-text;
+  text-transform: uppercase;
+  padding: 14px 0 13px 15px;
+  border: 0;
+  border: 1px  solid #E7E7E7;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.control__input-radio {
+  margin: 0;
+}
+
+.control__input-checkbox {
+  margin: 0;
+
 }

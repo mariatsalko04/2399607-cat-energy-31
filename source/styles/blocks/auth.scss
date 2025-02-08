@@ -1,0 +1,14 @@
+.auth__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    gap: 27px;
+  }
+}
