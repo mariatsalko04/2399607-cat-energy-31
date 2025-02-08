@@ -1,74 +1,194 @@
+.sub-products {
+  font-family: $primary-font;
+  background-color: $bg-base-white;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.sub-products__wrapper {
+  margin-top: 25px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 30px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 80px 0 110px;
+    margin-bottom: 96px;
+  }
+}
+
 .sub-products__title {
   font-family: $primary-font;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 80px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 80px;
+  }
 }
 
-.sub-products__name {
+.sub-products__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #CDCDCD;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    border-left: none;
+    border-right: none;
+  }
+
+}
+
+// sub-product card //
+
+.sub-product-card__container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #CDCDCD;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+}
+
+.sub-product-card__container:first-child {
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
+}
+
+
+.sub-product-card__container:last-child {
+  border-bottom: 1px solid #CDCDCD;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.sub-product-card__characteristic {
+  @media (min-width: $tablet-width) 
+   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    padding: 0;
+  }
+}
+
+.sub-product-card__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .sub-product-card__item-number {
+    width: 285px;
+}
+}
+
+
+.sub-product-card__name {
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.sub-products__value {
+.sub-product-card__value {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
+  text-align: left;
   color: $primary-color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 50px;
+  }
 }
 
-.sub-products__cost {
+.sub-product-card__cost {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   text-align: right;
   color: $primary-color-text;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
-.sub-products__gift {
-  display: block;
-  position: relative;
+.sub-product-card__button {
+  padding: 10px 110px;
+  margin-top: 15px;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 10px 285px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+    padding: 10px 91px;
+  }
 }
 
-.sub-products__gift::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 280;
-  height: 290;
-  background-image: 
-  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-  image-set(
-    url("/images/mobile-catalog/background-catalog-mobile@2x.webp") type("image/webp") 2x,
-    url("/images/mobile-catalog/background-catalog-mobile@1x.webp") type("image/webp") 1x,
-    url("/images/mobile-catalog/background-catalog-mobile@2x.png") 2x,
-    url("/images/mobile-catalog/background-catalog-mobile@1x.png") 1x
-  );
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.sub-products__gift::after {
-  content: "";
-  background-image: url("/icons/stack.svg#catalog-icons_gift");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-}
-
-.sub-products__label {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: $secondary-color-text;
-}
 
 

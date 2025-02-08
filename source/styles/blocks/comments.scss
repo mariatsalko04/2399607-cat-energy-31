@@ -3,4 +3,34 @@
   font-size: 24px;
   line-height: 26px;
   text-align: left;
+  margin: 0;
+  margin: 24px 0 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 65px 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px 0 78px;
+  }
+}
+
+.comments__text { 
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $primary-color-text;
+  margin: 0;
+  padding: 14px 14px;
+  border: 1px solid #E7E7E7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    height: 175px;
+  }
 }
