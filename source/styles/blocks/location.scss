@@ -15,7 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $bg-grey;
+  background-color: $bg-base-white;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
@@ -29,7 +29,14 @@
     margin: 95px 0 106px 110px;
     padding: 60px 78px 60px 80px;
     gap: 87px;
-    background-color: $bg-base-white;
+  }
+}
+
+.location__inner-adress {
+  background-color: $bg-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-base-white; 
   }
 }
 

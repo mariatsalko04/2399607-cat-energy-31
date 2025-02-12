@@ -32,7 +32,7 @@
             alt="Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -129,9 +129,9 @@
               функциональное питание.</p>
           </li>
           <li class="advantages__item advantages__item--icon-clock">
-            <p class="advantages__description">Уже через месяц<br>
-              наслаждайтесь изменениями<br>
-              к лучшему вашего питомца!</p>
+            <p class="advantages__description">Уже через месяц наслаждайтесь<br> 
+              изменениями к лучшему <br>
+              вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -163,7 +163,7 @@
       <div class="stats__slider slider">
 
         <!-- картина слева -->
-        <div class="slider__picture slider__picture--before">
+        <div class="slider__picture">
           <picture>
             <source media="(min-width: 768px)" type="image/png"
               srcset="images/tablet-index/cat-before-tablet@1x.webp, images/tablet-index/cat-before-tablet@2x.webp"
@@ -174,13 +174,21 @@
             <source media="(min-width: 768px)" type="image/png"
               srcset="images/tablet-index/cat-before-tablet@1x.png 1x, images/tablet-index/cat-before-tablet@2x.png 2x"
               width="560" height="512">
-            <img class="slider__image" type="image/png" src="images/mobile-index/cat-before-mobile@1x.png 1x"
+            <img class="slider__image slider__image--before" type="image/png" src="images/mobile-index/cat-before-mobile@1x.png 1x"
               srcset="images/mobile-index/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
           </picture>
         </div>
 
+        <!-- слайдер посередине -->
+        <div class="slider__dragme">
+          <button  class="slider__button"  type="button">
+            <span class="visually-hidden">Ползунок слайдера</span>
+          </button>
+          
+        </div>
+
         <!-- картинка справа -->
-        <div class="slider__picture slider__picture--after">
+        <div class="slider__picture">
           <picture>
             <source media="(min-width: 768px)" type="image/png"
               srcset="images/tablet-index/cat-after-tablet@1x.webp, images/tablet-index/cat-after-tablet@2x.webp"
@@ -191,16 +199,9 @@
             <source media="(min-width: 768px)" type="image/png"
               srcset="images/tablet-index/cat-after-tablet@1x.png 1x, images/tablet-index/cat-after-tablet@2x.png 2x"
               width="560" height="512">
-            <img class="slider__image" type="image/png" src="images/mobile-index/cat-after-mobile@1x.png 1x"
+            <img class="slider__image slider__image--after" type="image/png" src="images/mobile-index/cat-after-mobile@1x.png 1x"
               srcset="images/mobile-index/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Худой кот">
           </picture>
-        </div>
-
-        <!-- слайдер посередине -->
-        <div class="dragme">
-          <div class="dragme-circle">
-
-          </div>
         </div>
       </div>
     </section>
@@ -227,10 +228,13 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
 
-      <a class="main-footer__logo logo" href="index.html">
+        <a class="main-footer__logo logo" href="index.html">
         <img class="logo__text logo__text--footer" src="icons/stack.svg#header_logo-text" width="128" height="24"
           alt="Cat Energy">
       </a>
+      
+
+      
 
       <div class="main-footer__social social">
 

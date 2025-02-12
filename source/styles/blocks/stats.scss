@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     padding: 0;
+    margin-right: 219px;
   }
 }
 
@@ -155,7 +156,10 @@
     bottom: -4px;
     width: 125px;
     background-color: $bg-base-white;
+  }
 
+  @media (min-width: $desktop-width) {
+    background-color: $bg-grey;
   }
 }
 
@@ -207,9 +211,6 @@
   }
   
 }
-
-
-
 
 
 .stats__slider {
