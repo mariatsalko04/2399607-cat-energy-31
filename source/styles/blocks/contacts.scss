@@ -1,14 +1,43 @@
+.contacts {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
+}
+
 .contacts__title {
   font-family: $primary-font;
   font-size: 24px;
   line-height: 26px;
   text-align: left;
   margin: 26px 0 35px;
+  position: relative;
+  
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin: 65px 0 76px;
+    position: static;
+  }
+}
+
+.contacts__title span {
+  display: block;
+  max-width: 207px;
+  position: relative;
+  background: white;
+  padding: 0 20px 0 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 600px;
+    padding: 0 40px 0;
   }
 }
 

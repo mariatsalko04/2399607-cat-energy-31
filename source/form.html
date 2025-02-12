@@ -53,12 +53,14 @@
     </div>
   </header>
   <main class="form-container">
+
     <h1 class="form-container__title">Подбор программы</h1>
     <p class="form-container__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
 
     <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+
+      <h2 class="visually-hidden">Фильтр авторизации</h2>
       <div class="filter__wrapper">
-        <h2 class="visually-hidden">Фильтр авторизации</h2>
         <fieldset class="filter__auth auth">
           <legend class="visually-hidden">Авторизация пользователя</legend>
           <ul class="auth__list">
@@ -82,6 +84,7 @@
             </li>
           </ul>
         </fieldset>
+
         <fieldset class="filter__radio radio">
           <legend class="visually-hidden">Выбор программы</legend>
           <ul class="radio__list">
@@ -106,10 +109,16 @@
           </ul>
         </fieldset>
       </div>
+
+      </div>
     </form>
 
     <section class="contacts">
-      <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+      <h2 class="contacts__title title-line">
+        <span>
+          Контактные данные (владельца кота)
+        </span>
+      </h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
         <div class="filter__wrapper">
           <fieldset class="filter__email">
@@ -139,8 +148,11 @@
     </section>
 
     <section class="comments">
+      <h2 class="comments__title title-line">
+        <span>Комментарий</span>
+      </h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-        <h2 class="comments__title">Комментарий</h2>
+
         <label class="visually-hidden" for="comment">Комментарий</label>
         <textarea class="comments__text" name="story" id="comment" rows="5"
           cols="33">Расскажите обо всех повадках кота</textarea>
@@ -148,7 +160,9 @@
     </section>
 
     <section class="add-info">
-      <h2 class="add-info__title">Дополнительно</h2>
+      <h2 class="add-info__title title-line">
+        <span>Дополнительно</span>
+      </h2>
       <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter__info">
           <legend class="visually-hidden">Дополнительная информация</legend>
@@ -178,7 +192,10 @@
               </label>
             </li>
           </ul>
-          <button class="add-info__button button" type="button">Отправить заявку</button>
+          <div class="add-info__wrapper">
+            <button class="add-info__button button" type="button">Отправить заявку</button>
+            <span class="hint">* — Обязательные поля</span>
+          </div>
         </fieldset>
       </form>
     </section>
@@ -188,7 +205,7 @@
     <section class="location">
       <div class="location__wrapper">
 
-        <div class="location__address address">
+        <div class="location__address location__inner-adress address">
           <b class="address__title">Приглашаем<br> к сотрудничеству<br> дилеров!</b>
           <p class="address__text">ул. Большая<br>
             Конюшенная, д. 19/8<br>

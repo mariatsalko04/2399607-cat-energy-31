@@ -1,0 +1,18 @@
+.title-line::before {
+  content: "";
+  background-color: $bg-green;
+  width: 100vw;
+  height: 2px;
+  position: absolute;
+  top: 16px;
+  right: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 24px;
+  }
+}

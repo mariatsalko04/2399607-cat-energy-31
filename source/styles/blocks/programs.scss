@@ -148,7 +148,8 @@
   text-align: left;
   color: $special-dark-grey;
   margin: 0;
-  margin-bottom: 38px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #D9D9D9;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -156,6 +157,8 @@
     margin: 0;
     margin-bottom: 48px;
     max-width: 340px;
+    border: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -172,9 +175,11 @@
   text-transform: uppercase;
   color: $base-color-text;
   position: relative;
+  top: 10px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    top: 0;
   }
 }
 
