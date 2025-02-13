@@ -15,3 +15,15 @@
   text-align: center;
   align-self: center;
 }
+
+// Hover //
+
+.copyright__link:hover {
+  opacity: 0.7;
+}
+
+// Actived //
+
+.copyright__link:active {
+  opacity: 0.5;
+}

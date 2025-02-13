@@ -40,11 +40,214 @@
   }
 }
 
+// Hover // 
+
+.control__input:hover {
+  border: 1px solid #CDCDCD;
+  outline: none;
+}
+
+// Focused // 
+
+.control__input:focus {
+  border: 2px solid $primary-color-text;
+  outline: none;
+}
+
+// Error //
+
+.control__input::grammar-error {
+  border: 2px solid #FF8282;
+  outline: none;
+}
+
+/* Email */
+
+.control__icon-email {
+  position: absolute;
+  fill: none;
+  stroke: $base-color-text;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 83%;
+
+  @media (min-width: $tablet-width) {
+    left: 86%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 41%;
+  }
+}
+
+// Focused // 
+
+.control__icon-email:focus {
+  fill: none;
+  stroke: $bg-green;
+}
+
+
+/* Phone */ 
+
+.control__icon-phone {
+  position: absolute;
+  fill: none;
+  stroke: $base-color-text;
+  width: 20px;
+  height: 20px;
+  left: 83%;
+
+  @media (min-width: $tablet-width) {
+    left: 86%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 90%;
+  }
+}
+
+// Focused // 
+
+.control__icon-phone:focus {
+  fill: none;
+  stroke: $bg-green;
+}
+
+/* Radio */
+
+.control-radio {
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
 .control__input-radio {
-  margin: 0;
+  position: absolute;
+  appearance: none;
+}
+
+.control__box-radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 0 1px #CDCDCD;
+  margin-left:  - 45px;
+  border-radius: 50%;
+  background-color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -60px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// Checked //
+
+.control__input-radio:checked + .control__box-radio {
+  background-image: url("/icons/radio-button.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 22px;
+  }
+}
+
+// Focused //
+
+.control__input-radio:focus + .control__box-radio {
+  box-shadow: 
+    0 0 0 1px #CDCDCD,
+    0 0 0 2px $primary-color-text;
+}
+
+// Hover //
+
+.control__input-radio:hover + .control__box-radio {
+  box-shadow: 
+    0 0 0 1px #CDCDCD,
+    0 0 0 1px #BABABA;
+}
+
+// Error //
+
+.control__input-radio:hover + .control__box-radio::grammar-error {
+  box-shadow: 
+    0 0 0 1px #CDCDCD,
+    0 0 0 2px #FF8282;
+}
+
+
+
+/* Checkbox */
+
+.control-checkbox {
+  padding-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .control__input-checkbox {
-  margin: 0;
+  position: absolute;
+  appearance: none;
+}
 
+.control__box-check {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 0 1px #CDCDCD;
+  margin-left:  - 45px;
+  background-color: $secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -60px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// Checked //
+
+.control__input-checkbox:checked + .control__box-check {
+  background-image: url("/icons/check-button.svg");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 24px 20px;
+  }
+}
+
+// Focused //
+
+.control__input-checkbox:focus + .control__box-check {
+  box-shadow: 
+    0 0 0 1px #CDCDCD,
+    0 0 0 2px $primary-color-text;
+}
+
+// Hover //
+
+.control__input-checkbox:hover + .control__box-check {
+  box-shadow: 
+    0 0 0 1px #CDCDCD,
+    0 0 0 2px #BABABA;
+}
+
+// Error //
+
+.control__input-checkbox:hover + .control__box-check::grammar-error {
+  box-shadow: 
+    0 0 0 1px #CDCDCD,
+    0 0 0 2px #FF8282;
 }

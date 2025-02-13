@@ -61,3 +61,24 @@
     margin: 0 40px;
   }
 }
+
+// Hover // 
+
+.comments__text:hover {
+  border: 1px solid #CDCDCD;
+  outline: none;
+}
+
+// Focused // 
+
+.comments__text:focus {
+  border: 2px solid $primary-color-text;
+  outline: none;
+}
+
+// Error //
+
+.comments__text::grammar-error {
+  border: 2px solid #FF8282;
+  outline: none;
+}

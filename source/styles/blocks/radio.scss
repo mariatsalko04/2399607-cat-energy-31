@@ -1,7 +1,15 @@
 .radio__list { 
   display: flex;
   flex-direction: column;
-  gap: 13px;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    gap: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {

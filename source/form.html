@@ -89,20 +89,23 @@
           <legend class="visually-hidden">Выбор программы</legend>
           <ul class="radio__list">
             <li class="radio__item">
-              <label class="control">
+              <label class="control control-radio">
                 <input class="control__input-radio" type="radio" name="categories" value="program" checked>
+                <span class="control__box-radio"></span>
                 <span class="control__name">Похудение</span>
               </label>
             </li>
             <li class="radio__item">
-              <label class="control">
+              <label class="control control-radio">
                 <input class="control__input-radio" type="radio" name="categories" value="program">
+                <span class="control__box-radio"></span>
                 <span class="control__name">Набор массы</span>
               </label>
             </li>
             <li class="radio__item">
-              <label class="control">
+              <label class="control control-radio">
                 <input class="control__input-radio" type="radio" name="categories" value="program">
+                <span class="control__box-radio"></span>
                 <span class="control__name">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
@@ -128,6 +131,9 @@
                 <label class="control">
                   <span class="control__name">E-mail:*</span>
                   <input class="control__input" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+                  <svg class="control__icon-email" viewBox="0 0 18 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M.5 5.5v8h17v-8m-17-5h17v2l-8.5 6-8.5-6v-2Z" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
                 </label>
               </li>
             </ul>
@@ -140,6 +146,9 @@
                   <span class="control__name">Телефон:*</span>
                   <input class="control__input" type="tel" name="phone" placeholder="8 (960) 900-60-90"
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <svg class="control__icon-phone" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 8h8.5m0 0-2.5-2.5m2.5 2.5-2.5 2.5m-7.5-10v5h-3v5h3v5h-2.5c-1.5 0-2.5-1-2.5-2.5v-10c0-1.5 1-2.5 2.5-2.5h2.5Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </label>
             </ul>
           </fieldset>
@@ -168,26 +177,30 @@
           <legend class="visually-hidden">Дополнительная информация</legend>
           <ul class="add-info__list">
             <li class="add-info__item">
-              <label class="control">
+              <label class="control control-checkbox">
                 <input class="control__input-checkbox" type="checkbox" name="sweetener" checked>
+                <span class="control__box-check"></span>
                 <span class="control__name">Сахарозаменитель</span>
               </label>
             </li>
             <li class="add-info__item">
-              <label class="control">
+              <label class="control control-checkbox">
                 <input class="control__input-checkbox" type="checkbox" name="water">
+                <span class="control__box-check"></span>
                 <span class="control__name">Питьевая вода</span>
               </label>
             </li>
             <li class="add-info__item">
-              <label class="control">
+              <label class="control control-checkbox">
                 <input class="control__input-checkbox" type="checkbox" name="milk">
+                <span class="control__box-check"></span>
                 <span class="control__name">Молоко</span>
               </label>
             </li>
             <li class="add-info__item">
-              <label class="control">
+              <label class="control control-checkbox">
                 <input class="control__input-checkbox" type="checkbox" name="vitamins">
+                <span class="control__box-check"></span>
                 <span class="control__name">Витамины</span>
               </label>
             </li>
@@ -260,7 +273,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           HTML Academy
         </a>
-        <a href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Логотип htmlacademy</span>
           <svg role="img" width="27" height="34">
             <use href="icons/stack.svg#footer_logo-htmlacademy"></use>
