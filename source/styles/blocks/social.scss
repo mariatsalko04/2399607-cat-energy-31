@@ -5,3 +5,15 @@
   justify-content: center;
   gap: 24px;
 }
+
+// Hover //
+
+.social__link:hover {
+  opacity: 0.7;
+}
+
+// Actived //
+
+.social__link:active {
+  opacity: 0.5;
+}

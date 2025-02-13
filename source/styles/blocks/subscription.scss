@@ -103,6 +103,27 @@
   }
 }
 
+// Hover // 
+
+.subscription__email:hover {
+  border: 1px solid #CDCDCD;
+  outline: none;
+}
+
+// Focused // 
+
+.subscription__email:focus {
+  border: 2px solid $primary-color-text;
+  outline: none;
+}
+
+// Error //
+
+.subscription__email::grammar-error {
+  border: 2px solid #FF8282;
+  outline: none;
+}
+
 .subscription__button {
   padding: 15px 82px;
   width: 280px;

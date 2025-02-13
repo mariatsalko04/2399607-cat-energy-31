@@ -3,3 +3,16 @@
   justify-content: center;
 }
 
+// Hover //
+
+.logo__text:hover {
+  opacity: 0.7;
+}
+
+// Actived //
+
+.logo__text:active {
+  opacity: 0.5;
+}
+
+

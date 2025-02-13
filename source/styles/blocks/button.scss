@@ -14,6 +14,19 @@
   cursor: pointer;
 }
 
+// Hover //
+
+.button:hover {
+  background-color: #5EAA2F;
+}
+
+// Actived //
+
+.button:active {
+  background-color: #5EAA2F;
+  opacity: 0.5;
+}
+
 .button--secondary {
   font-family: $primary-font;
   font-weight: 400;
@@ -28,4 +41,17 @@
   margin: 0;
   border: none;
   cursor: pointer;
+}
+
+// Hover //
+
+.button--secondary:hover {
+  background-color: #EBEBEB;
+}
+
+// Actived //
+
+.button--secondary:active {
+  background-color: #EBEBEB;
+  opacity: 0.5;
 }

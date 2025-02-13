@@ -24,6 +24,18 @@
   display: grid;
 }
 
+// Hover //
+
+.slider__dragme:hover {
+  opacity: 0.7;
+}
+
+// Actived //
+
+.slider__dragme:active {
+  opacity: 0.5;
+}
+
 
 .slider__button {
   cursor: col-resize;
@@ -41,6 +53,18 @@
   padding: 6px;
 }
 
+// Hover //
+
+.slider__button:hover {
+  opacity: 0.7;
+}
+
+// Actived //
+
+.slider__button:active {
+  opacity: 0.5;
+}
+
 .slider__button::before {
   content: "";
   background-color: #666666;
@@ -49,7 +73,6 @@
   width: 24px;
   height: 18px;
 }
-
 
 
 .slider__image {
